@@ -34,7 +34,6 @@ allprojects {
 
 ```xml
 <com.howshea.roundcornerimageview.RoundCornerImageView
-    android:id="@+id/img_gif"
     android:layout_width="250dp"
     android:layout_height="wrap_content"
     app:ratio="1.7"
