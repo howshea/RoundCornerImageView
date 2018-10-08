@@ -53,7 +53,7 @@ RoundCornerImageView(context).apply {
 }
 ```
 
-其中 `ratio `属性是图片宽高比，值要大于0，当设置了ratio，`android:layout_height` 属性便会不起作用，这个属性图片宽度适应屏幕宽度时比较有用。
+其中 `ratio `属性是图片宽高比，值要大于0，当设置了ratio，`android:layout_height` 属性便会不起作用，高度会根据宽度自动计算，这个属性在图片宽度需要适应屏幕宽度时比较有用。
 
 ## Other
 
