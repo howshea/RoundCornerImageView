@@ -16,18 +16,6 @@ dependencies {
 }
 ```
 
-如果依赖不了，可能是 jcenter 审核尚未结束，可以直接加上仓库地址：
-
-```groovy
-allprojects {
-    repositories {
-        ...
-        maven {
-            url 'https://dl.bintray.com/howshea/maven'
-        }
-    }
-}
-```
 ## Usage
 
 `XML`
@@ -56,5 +44,7 @@ RoundCornerImageView(context).apply {
 
 ## Other
 
-- Kotlin版本为1.2.71，使用时注意Kotlin插件版本不要低于此版本。
-- 当borderWidth或者radius大于0时，图片仅支持 centerCrop 和 fitXY，默认为centerCrop,当borderWidth和radius都大于0时，和普通ImageView没有区别。
+- 此项目使用的Kotlin版本为1.2.71
+- 当borderWidth或者radius大于0时，图片仅支持 centerCrop 和 fitXY，默认为centerCrop,当borderWidth和radius都等于0时，和普通ImageView没有区别
+- Drawable 转 bitmap 的处理参考了[CircleImageView](https://github.com/hdodenhof/CircleImageView)
+- 对CENTER_CROP的处理参考了[SWImageView](https://github.com/sw950729/SWImageView)
