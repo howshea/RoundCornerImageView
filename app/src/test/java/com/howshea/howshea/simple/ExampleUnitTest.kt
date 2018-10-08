@@ -1,4 +1,4 @@
-package com.example.howshea.simple
+package com.howshea.howshea.simple
 
 import org.junit.Test
 

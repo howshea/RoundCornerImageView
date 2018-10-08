@@ -1,4 +1,4 @@
-package com.example.roundcornerimageview;
+package com.howshea.roundcornerimageview;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

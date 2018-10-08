@@ -1,4 +1,4 @@
-package com.example.roundcornerimageview;
+package com.howshea.roundcornerimageview;
 
 import org.junit.Test;
 
