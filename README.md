@@ -1,14 +1,13 @@
 # RoundCornerImageView
 
-最近想在github上找个圆角带边框的ImageView，找了几个或者不支持Color、或者不支持gif、或者不支持Glide，所以干脆自己写一个。
+最近想在github上找个圆角带边框的ImageView，找了几个或者不支持Color、或者不支持gif、或者不支持Glide，所以干脆自己用 Kotlin 写一个。
 
 效果图：
 
 ![](https://github.com/howshea/RoundCornerImageView/raw/master/gif/ezgif-3-b44cae533193.gif)
 
-Gradle
+## Gradle
 
----------
 
 ```groovy
 dependencies {
@@ -17,7 +16,7 @@ dependencies {
 }
 ```
 
-如果依赖不了，可能是审核尚未结束，可以直接加上仓库地址：
+如果依赖不了，可能是 jcenter 审核尚未结束，可以直接加上仓库地址：
 
 ```groovy
 allprojects {
@@ -29,10 +28,9 @@ allprojects {
     }
 }
 ```
+## Usage
 
-Usage
-
------
+`XML`
 
 ```xml
 <com.howshea.roundcornerimageview.RoundCornerImageView
@@ -45,3 +43,18 @@ Usage
     app:radius="4dp" />
 ```
 
+or  `Kotlin`
+
+```kotlin
+RoundCornerImageView(context).apply {
+    borderColor = Color.parseColor("#DBDBDB")
+    borderWidth = dp(0.4f).toFloat()
+    radius = dp(3).toFloat()
+}
+```
+
+其中 `ratio `属性是图片宽高比，值要大于0，当设置了ratio，`android:layout_height` 属性便会不起作用，这个属性图片宽度适应屏幕宽度时比较有用。
+
+## Other
+
+Kotlin版本为1.2.71，使用时注意Kotlin插件版本不要低于此版本。
