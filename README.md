@@ -56,4 +56,5 @@ RoundCornerImageView(context).apply {
 
 ## Other
 
-Kotlin版本为1.2.71，使用时注意Kotlin插件版本不要低于此版本。
+- Kotlin版本为1.2.71，使用时注意Kotlin插件版本不要低于此版本。
+- 当borderWidth或者radius大于0时，图片仅支持 centerCrop 和 fitXY，默认为centerCrop,当borderWidth和radius都大于0时，和普通ImageView没有区别。
