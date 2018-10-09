@@ -11,9 +11,14 @@
 
 ```groovy
 dependencies {
-    ...
-    implementation 'com.howshea:roundCornerImageView:1.0.0'
+    implementation 'com.howshea:roundCornerImageView:1.0.1'
 }
+```
+
+如果是普通的 Java 项目，还要依赖一下 Kotlin 的标准库才能使用
+
+```groovy
+implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71"
 ```
 
 ## Usage
@@ -44,7 +49,6 @@ RoundCornerImageView(context).apply {
 
 ## Other
 
-- 此项目使用的Kotlin版本为1.2.71
 - 当borderWidth或者radius大于0时，图片仅支持 centerCrop 和 fitXY，默认为centerCrop,当borderWidth和radius都等于0时，和普通ImageView没有区别
 - Drawable 转 bitmap 的处理参考了[CircleImageView](https://github.com/hdodenhof/CircleImageView)
 - 对CENTER_CROP的处理参考了[SWImageView](https://github.com/sw950729/SWImageView)
