@@ -15,7 +15,7 @@ dependencies {
 }
 ```
 
-如果是普通的 Java 项目，还要依赖一下 Kotlin 的标准库才能使用
+如果你的项目里没有依赖 Kotlin 的标准库，还要依赖一下 Kotlin 的标准库才能使用
 
 ```groovy
 implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71"
