@@ -11,6 +11,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        img_gif.apply {
+            borderWidth = 20f
+            ratio = 1.333f
+            radius = 30f
+        }
         Glide.with(this)
             .load("https://cdn.dribbble.com/users/4874/screenshots/3704428/comms.gif")
             .apply(RequestOptions().placeholder(R.color.placeHolder))

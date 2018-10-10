@@ -35,6 +35,8 @@ class RoundCornerImageView : ImageView {
         get() = _borderWidth
         set(value) {
             _borderWidth = value
+            //重新计算边框内圆角半径
+            innerRadius = _radius - _borderWidth / 2f
             invalidate()
         }
     var borderColor: Int
@@ -47,6 +49,8 @@ class RoundCornerImageView : ImageView {
         get() = _radius
         set(value) {
             _radius = value
+            //重新计算边框内圆角半径
+            innerRadius = _radius - _borderWidth / 2f
             invalidate()
         }
     var ratio: Float
@@ -63,7 +67,7 @@ class RoundCornerImageView : ImageView {
             _borderWidth = getDimension(R.styleable.RoundCornerImageView_borderWidth, 0f)
             _borderColor = getColor(R.styleable.RoundCornerImageView_borderColor, Color.TRANSPARENT)
             _radius = getDimension(R.styleable.RoundCornerImageView_radius, 0f)
-            //计算出边框内圆角半径
+            //计算边框内圆角半径
             innerRadius = _radius - _borderWidth / 2f
             _ratio = getFloat(R.styleable.RoundCornerImageView_ratio, 0f)
         }
