@@ -8,6 +8,12 @@
 
 ![](https://github.com/howshea/RoundCornerImageView/raw/master/gif/simple.gif)
 
+## 功能
+
+- 设置边框粗细和颜色
+- 设置圆角半径
+- 设置宽高比
+
 ## 更新说明
 
 **V 1.0.2** 更新边框内圆角半径和图片显示尺寸的计算规则，让图片边缘不会被边框遮挡掉一部分
