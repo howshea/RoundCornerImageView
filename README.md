@@ -1,6 +1,6 @@
 # RoundCornerImageView
 
-![](https://img.shields.io/badge/version-1.0.2-brightgreen.svg)
+![](https://img.shields.io/badge/version-1.0.3-brightgreen.svg)
 
 最近想在github上找个圆角带边框的ImageView，找了几个或者不支持Color、或者不支持gif、或者不支持Glide，所以干脆自己用 Kotlin 写一个。
 
@@ -15,7 +15,7 @@
 - 设置宽高比
 
 ## 更新说明
-
+**V 1.0.3** 修复使用代码修改控件属性时内半径未重新计算的bug
 **V 1.0.2** 更新边框内圆角半径和图片显示尺寸的计算规则，让图片边缘不会被边框遮挡掉一部分
 
 ## Gradle
@@ -23,7 +23,7 @@
 
 ```groovy
 dependencies {
-    implementation 'com.howshea:roundCornerImageView:1.0.2'
+    implementation 'com.howshea:roundCornerImageView:1.0.3'
 }
 ```
 
