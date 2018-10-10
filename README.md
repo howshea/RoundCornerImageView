@@ -23,7 +23,7 @@
 
 ```groovy
 dependencies {
-    implementation 'com.howshea:roundCornerImageView:1.0.1'
+    implementation 'com.howshea:roundCornerImageView:1.0.2'
 }
 ```
 
