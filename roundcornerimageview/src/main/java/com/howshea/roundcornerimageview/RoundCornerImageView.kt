@@ -162,9 +162,6 @@ class RoundCornerImageView : ImageView {
                     _matrix?.postTranslate(borderWidth+dx, borderWidth+dy)
                 }
             }
-            if (ImageView.ScaleType.FIT_XY == scaleType){
-
-            }
         }
         bitmapShader.setLocalMatrix(_matrix)
         return bitmapShader
