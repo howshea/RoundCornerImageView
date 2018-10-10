@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.0.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -35,7 +35,7 @@ publish {
     userOrg = 'howshea'
     groupId = 'com.howshea'
     artifactId = 'roundCornerImageView'
-    publishVersion = '1.0.1'
+    publishVersion = '1.0.2'
     desc = 'An ImageView that supports rounded corners'
     website = 'https://github.com/howshea/RoundCornerImageView'
 }
